@@ -1,0 +1,23 @@
+      #1st method of  reverse a string using [::-1]
+a=input("Enter string")
+b=a[::-1]
+print("Reversed string:",b)
+
+     #2nd method of reverse a string using loop way
+a=input("Enter a string")
+b=""
+for ch in a:
+    b=ch+b
+print("Reversed string:",b)
+
+      #3rd method of reverse a string using loop (c style)
+a = "hello"
+i = len(a) - 1
+b = ""
+while i >= 0:
+    b += a[i]
+    i -= 1
+
+print(b)
+
+
