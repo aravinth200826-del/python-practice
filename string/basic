@@ -1,0 +1,89 @@
+1. Basic String Operations
+python
+
+
+# Multiple ways to create strings
+str1 = "Hello, World!"
+str2 = 'Python Programming'
+str3 = '''Multi-line
+string'''
+str4 = str(123)  # Convert number to string
+
+print(f"str1: {str1}")
+print(f"str2: {str2}")
+print(f"str3:\n{str3}")
+print(f"str4: {str4}")
+
+            Output:
+                 str1: Hello, World!
+                 str2: Python Programming
+                 str3:
+                 Multi-line
+                 string
+                 str4: 123
+
+2. String Input & Methods
+python
+
+
+name = input("Enter your name: ")
+print(f"Hello, {name.title()}!")
+print(f"Uppercase: {name.upper()}")
+print(f"Lowercase: {name.lower()}")
+print(f"Length: {len(name)}")
+print(f"Replaced 'a' with '@': {name.replace('a', '@')}")
+
+
+
+         output:
+             Hello, Alice!
+            Uppercase: ALICE
+             Lowercase: alice
+              Length: 5
+            Replaced 'a' with '@': @lice
+
+3. String Slicing & Formatting
+python
+
+text = "Python is awesome!"
+
+# Slicing
+print(f"First 6 chars: {text[:6]}")
+print(f"Last 8 chars: {text[-8:]}")
+print(f"Reverse: {text[::-1]}")
+print(f"Every 2nd char: {text[::2]}")
+
+# f-string formatting
+name, age = "Bob", 25
+print(f"{name} is {age} years old")
+Output:
+
+
+Copy code
+First 6 chars: Python
+Last 8 chars: awesome!
+Reverse: !emosewa si nohtyP
+Every 2nd char: Pto s wsm!
+Bob is 25 years old
+4. String Reverse
+python
+
+Copy code
+def reverse_string(s):
+    return s[::-1]
+
+text = "Programming"
+print(f"Original: {text}")
+print(f"Reversed: {reverse_string(text)}")
+
+# Alternative methods
+print(f"Method 2: {''.join(reversed(text))}")
+print(f"Method 3: {text[::-1]}")
+Output:
+
+
+Copy code
+Original: Programming
+Reversed: gnimmargorP
+Method 2: gnimmargorP
+Method 3: gnimmargorP
