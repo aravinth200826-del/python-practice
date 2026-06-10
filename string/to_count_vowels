@@ -1,0 +1,24 @@
+def myfunc(*a):
+    length=len(a)
+    total=0
+    for i in range(0,length):  #that contains word
+        lent=len(a[i])
+        for j in range(0,lent):  #this contains each letter of a word
+            if (a[i][j]=="a" or a[i][j]=="e" or a[i][j]=="i" or a[i][j]=="o" or a[i][j]=="u"):
+                total=total+1
+    print("Total vowels are:",total)
+myfunc("aravinth","vishnu","tanish","guna","subhash")
+
+# Above code is easy,smartest and pythonic way to count vowels
+
+
+def myfunc(*a):
+    total=0
+    for word in a:
+            for letter in word:
+                   if letter.lower() in "aeiou":
+                           total=total+1
+    return total
+
+result=myfunc("aravinth","vishnu","tanish","guna","subhash")
+print("Total vowels are:",result)
