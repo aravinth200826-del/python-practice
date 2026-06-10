@@ -1,0 +1,11 @@
+n=int(input("Enter the number for which you want to check prime or not:"))
+dividers=[]
+
+for divider in range(2,n):  #prime number should start with 2
+     if (n%divider)==0:
+             dividers.append(divider)
+
+if len(dividers)==0:
+     print("{} is prime".format(n))
+else:
+      print("{} is not prime because it can be divided by {}".format(n,dividers))
