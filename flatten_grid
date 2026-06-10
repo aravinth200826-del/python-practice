@@ -1,0 +1,33 @@
+#Example Input: ["radar", "apple", "civic", "python", "level"]
+
+#Expected Output: ["radar", "civic", "level"]
+
+
+#I completed this code in my own way
+
+def myfunc(a):
+   length=len(a)
+   flatten=[]
+   for i in range(0,length):
+        lent=len(a[i])
+        for j in range(0,lent):
+              flatten.append(a[i][j])
+   return flatten           
+
+result=myfunc([[1,2,3],[4,5,6],[7,8,9]])
+print(result)
+
+#the pythonic and smartest way
+
+def flatten_grid(grid):
+    flat_list = []
+    
+    # Loop directly through each inner list in the main grid
+    for inner_list in grid:
+        # Loop directly through each number in the inner list
+        for number in inner_list:
+            flat_list.append(number)
+            
+    return flat_list
+
+print(flatten_grid([[1, 2, 3], [4, 5], [6, 7, 8, 9]]))
