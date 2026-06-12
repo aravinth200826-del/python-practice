@@ -1,0 +1,19 @@
+#if you use sort operation on list that arranges a numbers in acsending order
+
+numbers = [5, 2, 8, 1]
+numbers.sort()
+print(numbers)
+
+##
+numbers.sort(reverse=True)  # descending order
+
+##
+words = ["apple", "kiwi", "banana"]
+words.sort(key=len)                   # sort by length
+
+##
+numbers = [5, 2, 8, 1]
+result = numbers.sort()
+
+print(numbers)  # [1, 2, 5, 8]
+print(result)   # None
