@@ -1,6 +1,6 @@
-#Example Input: ["radar", "apple", "civic", "python", "level"]
+#Example Input: [[1,2,3],[4,5,6],[7,8,9]]
 
-#Expected Output: ["radar", "civic", "level"]
+#Expected Output: [1,2,3,4,5,6,7,8,9]
 
 
 #I completed this code in my own way
