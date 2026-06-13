@@ -20,4 +20,14 @@ while i >= 0:
 
 print(b)
 
+      #4th method of reverse a string using loop 
+
+def reverse(a):
+   reversed=""
+   for i in range(len(a)):
+        reversed+=a[len(a)-i-1]
+   return reversed
+print(reverse("123"))
+print(reverse("aravinth"))
+
 
