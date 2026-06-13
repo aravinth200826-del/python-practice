@@ -1,0 +1,15 @@
+import datetime as dt
+
+def conversation(chat,time=dt.datetime.now()):
+      print("{:} time: {:}".format(chat,time))
+
+conversation("Hello! what's time now?")     #Hello! what's time now? time: 2026-06-13 00:02:06.930998
+
+  ##
+
+import datetime as dt
+
+def conversation(chat,time=dt.datetime.now()):
+      print("{:} time: {:}".format(chat,time))
+
+conversation("Hello! what's time now?","June 13,2026")   #Hello! what's time now? time: June 13,2026
