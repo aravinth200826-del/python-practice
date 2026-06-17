@@ -1,0 +1,81 @@
+List
+
+>It's used to store multiple elements in one list.
+>It's same like as array.but different is here between array and list.
+   *In array we can store only same type of data but in list we can store various type of data
+>we should used to store elements inside of square bracket[]
+
+>we can access(printing) the elements using index
+
+
+a=[1,2,3]
+b=[4,5,6]
+c=a+b
+d=a*3 
+print(d)  #[1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+print(c) #[1,2,3,4,5,6]
+
+#if you want to print length of list we can use len() operation
+print(len(a))  # 3
+
+#inserting elements into a list
+#append operation only inserts a elements in last index of the list
+a.append(4)
+print(a)  #[1, 2, 3, 4]
+
+#if you want to insert a set of list into a list you can use extend() operation
+a.extend(b)
+print(a) #[1, 2, 3, 4, 5, 6]
+
+#if you want to insert a new element on specific index you can use insert() operation
+a.insert(1,4)
+print(a)  #[1, 4, 2, 3]
+
+#empty or clear the list
+a.clear()
+print(a)  #[]
+
+#to count a specific element how many times filled in the list
+a=[1,2,3,4,6,6,4]
+print(a.count(4)) # 2 
+
+#index
+print("Index",list.index(3)) # 2
+
+#min and max
+print(min(a)) #1
+print(max(a)) #6
+
+#sorting method 1) (ascending order)
+a=[1,2,3,4,6,6,4,2,7,4,345,76,4,34,8]
+print("Before sorting:",a) # Before sorting: [1, 2, 3, 4, 6, 6, 4, 2, 7, 4, 345, 76, 4, 34, 8]
+a.sort()
+print("after sorting:",a)  # after sorting: [1, 2, 2, 3, 4, 4, 4, 4, 6, 6, 7, 8, 34, 76, 345]
+
+ 2) sorting method (descending order)
+     
+a=[1,2,3,4,6,6,4,2,7,4,345,76,4,34,8]
+print("Before sorting:",a) # Before sorting: [1, 2, 3, 4, 6, 6, 4, 2, 7, 4, 345, 76, 4, 34, 8]
+a.sort(reverse=True) 
+print("after sorting:",a)  #after sorting: [345, 76, 34, 8, 7, 6, 6, 4, 4, 4, 4, 3, 2, 2, 1]
+
+#sum
+a=[1,2,3,4,6,6,4,2,7,4,345,76,4,34,8]
+print("sum:",sum(a)) #506
+
+#list are mutability
+#mutability means you can change index value one to another
+a=[12,43,4,56,3]
+a[0]=23
+print(a) [23, 43, 4, 56, 3]
+
+#pop
+a.pop() #if you want to pop a specific index you can also use like this a.pop(2)
+print(a) #[23, 43, 4, 56]
+
+#remove
+a.remove() #you should remove a element using value of element
+print(a)
+
+     
+
