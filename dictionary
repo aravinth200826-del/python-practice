@@ -1,0 +1,60 @@
+#dictionary
+ #in dictionary we creates inside a curly brakcets {}
+
+a={1:'one',2:'aravinth',3:'vin'}
+ print(a) #{1:'one',2:'aravinth',3:'vin'}
+ print(type(a)) # dict
+
+ > {1:'one',1:'two'} in this we should use '1' in only one time 
+>index concept is not here on dictionary
+   
+  a={1:'one',2:'aravinth',3:'vin'}  #in this '1','2' and '3' is usually called as 'key'
+   print(a[1]) # 'one' 
+
+ >dictionary is unordered 
+ >so we cannot sort a dictionary
+ >edhu vanalum store pannalam key oda value not key name
+ >keys are immutable
+ > but value we can use whatever may be like int,str,list,tuple
+>if  datatype immutable la irundha adha namma key value va use pannalam like string,tuple
+   
+    #key as tuple 
+   a={(1,):'one',2:'aravinth',3:'vin'}
+  print(a[(1,)]) # 'one'
+    
+         
+  #you can also use key as string  
+     a={"digits":'one',"name":"aravinth",3:'vin'}
+      print(a["name"]) # 'aravinth'
+
+  #len 
+        print(len(a)) #3 
+
+   #if you want to print seperately keys and values u can print like this
+        a={"digit":'one',"name":'aravinth',3:'vin'}
+print(a.keys())  #dict_keys(['digit', 'name', 3])
+print(a.values()) #dict_values(['one', 'aravinth', 'vin'])
+
+  #if you want to print keys and values in list type 
+  a={"digit":'one',"name":'aravinth',3:'vin'}
+print(a.items())     #dict_items([('digit', 'one'), ('name', 'aravinth'), (3, 'vin')])
+
+  #insert 
+   a[4]="four"    #if 4 key is not placed in dictionary it will create a newone else if we have already the key it will update the value
+  print(a)  #{'digit': 'one', 'name': 'aravinth', 3: 'vin', 4: 'four'}
+
+#pop
+  a.pop(4)
+  print(a) #it will delete the 4 key and that value
+
+
+#clear
+  a.clear()
+  print(a)  #{}
+
+
+        
+        
+        
+    
+   
