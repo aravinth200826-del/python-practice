@@ -1,0 +1,49 @@
+
+#1
+
+class det:
+    def details(self,name,age,city):    
+          self.name=name
+          self.age=age           #this is the method to store name actual value in name
+          self.city=city
+ar=det()                   #when you create a object  put a 'self' parameter into the function inside class
+ar.details("aravinth",33,"salem")      
+
+print(ar.name)         #aravinth
+print(ar.age)          #33
+
+
+#2   unique constructor 
+
+class det:
+    def __init__(self,name,age,city):    #when you use __init__ unique constructor when you create a object automatically function is called by itself
+          self.name=name
+          self.age=age
+          self.city=city
+ar=det("aravinth",34,"salem")
+print(ar.age)           #34    
+
+
+#3 printing method
+
+class det:
+    def details(self,name,age,city):
+          self.name=name
+          self.age=age
+          self.city=city
+    def display(self):
+        print("age:",self.age)
+        print("name:",self.name)
+        print("city:",self.city)
+ar=det()
+ar.details("aravinth",34,"salem")
+
+ar.display()
+
+
+
+
+
+
+
+
