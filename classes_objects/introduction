@@ -1,0 +1,33 @@
+class-class is blueprint of creating a objects
+objects- objects have real attributes (data)
+
+#creating class
+
+class goa:
+    name="aravinth"
+a=goa() 
+print(a.name)   #aravinth
+
+ ->in this above code 
+       goa- class
+       a-object 
+
+example
+  class goa:
+    name=""
+    def party(self):
+          print("Lets party")
+    def beach(self):
+          print("enjoy the view of beach")
+
+ramesh=goa()          #ramesh and suresh is object
+suresh=goa()              #in this we use a () this so we put 'self' function parameter 
+
+ramesh.name="ramesh"            #ramesh and suresh register us name in goa class
+suresh.name="suresh"
+
+print(ramesh.name)           #ramesh
+int(ramesh.beach())       #enjoy the view of beach   
+
+
+
