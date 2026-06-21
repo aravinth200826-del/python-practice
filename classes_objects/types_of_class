@@ -1,0 +1,55 @@
+we have 3 methods of class in python 
+ 1)instance method
+2)class method
+3)static method
+
+instance method
+
+->uses 'self'
+->works with instance variables
+
+#program
+class student:
+       def __init__(self,name):
+             self.name=name
+       def display(self):
+             print("name:",self.name)
+st=student("aravinth")
+st.display()         #aravinth 
+
+  ---> in this we use instance variable 'self' so this is instace method of class
+
+#2 class method
+
+->uses 'cls'
+->works with class variables
+->decorator=@classmethod
+
+  #program
+
+  class student:
+    name="aravinth"       #class variable
+    @classmethod  
+    def changename(cls):
+        cls.name="titus"
+        print("name was changes")
+st=student()
+
+
+#3 static method
+   ->Uses neither self nor cls
+->Acts like a normal function inside a class
+->Decorator: @staticmethod
+
+#program
+
+class student:
+    @staticmethod     #decorator
+    def display():        #run without parameter and variables
+        print("this is static method run without varibles(parameter)")
+st=student()
+st.display()
+        
+
+        
+    
