@@ -1,0 +1,73 @@
+In python,class variables are classified into two types,
+     ther are,
+               1)instance variable
+               2)class variable
+
+instance variable:
+   #these belong to each object seperately
+   #inside constructor variables are called instance variable 
+
+class phone:
+    def __init__(self,brand,price,chargertype):     #self,brand,prince,chargertype these are instance variable
+        self.brand=brand
+        self.price=price
+        self.chargertype=chargertype
+    def display(self): 
+        print("Brand:",self.brand)
+        print("Price:",self.price)
+        print("Chargertype:",self.chargertype)
+        
+ph=phone("vivo",23000,"c-type")                       
+ph.display()                                          
+
+
+sam=phone("samsung",12000,"c-type")
+sam.display()    
+
+#Brand: vivo
+Price: 23000
+Chargertype: c-type
+Brand: samsung
+Price: 12000
+Chargertype: c-type
+
+
+in this chargertype same in two model phones so we don't need to put multiple types in c-type 
+adhanala chargertype endra variaible aa default oda value vaa namma "c-type" nu store pannalam.
+
+example using default variable 
+
+class phone:
+    chargertype="c-type"            #this is called as class variable
+    def __init__(self,brand,price):  # chargertype variable at as global variable
+                                      #where place we use this variable it's contains "c-type" data
+        self.brand=brand
+        self.price=price
+        
+    def display(self):
+        print("Brand:",self.brand)
+        print("Price:",self.price)
+        print("Chargertype:",self.chargertype)
+        
+ph=phone("vivo",23000)
+ph.display()
+
+sam=phone("samsung",12000)
+sam.display()
+
+
+# Brand: vivo
+Price: 23000
+Chargertype: c-type
+Brand: samsung
+Price: 12000
+Chargertype: c-type
+
+
+Then if you want to update the chargertype value just put outside of class,
+
+phone.chargertype="b=type"    #classname variablename=data  
+
+
+
+   
