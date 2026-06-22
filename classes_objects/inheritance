@@ -1,0 +1,93 @@
+1. Single Inheritance
+      you will create one object for one class and that's same object can access the another class 
+
+ #example
+ #in the given program one object is created for son class that same son object is can access the dad class if you put like this:
+    class dad():
+    def phone(self):       
+        print("Dads phone")
+    
+class son(dad):          #in this place we put dad class in son class so son object can access the dad class.means the son can access the dad class
+    def laptop(self):
+        print("son's laptop")
+
+aravinth=son()     #you create a separate object for son
+aravinth.laptop()  
+aravinth.phone()        #son's laptop
+                         Dads phone
+        
+
+2. Multiple Inheritance
+       in this you will create one object for one class that's same object can access another 2 classes
+
+ #example
+ #in the given program one object is created for son class and that son object will access the dad and mom classes 
+
+ class dad():
+    def phone(self):
+        print("Dads phone")
+class mom():
+    def food(self):
+        print("Moms food")
+    
+class son(dad,mom):       #in this place we put a dad and mom classes in inside of son class.means the son can be access the mom and dad classes
+    def laptop(self):
+        print("son's laptop")
+
+aravinth=son()     #you create a separate object for son
+aravinth.laptop()  
+aravinth.phone()    # 
+aravinth.food()
+
+3.Multilevel inheritance
+   #in this one object created for 'dad' class that  object will connected to 'grandpa' class.so the 'grandpa' will be acccess by the 'dad' class
+   #in this another object is created for 'son' class class that object will connect to 'dad' class.so the 'son' class can access both 'dad' and 'grandpa'because the dad class was connected to the gradpa class
+
+class grandpa():
+    def phone(self):
+        print("grandpa's phone")
+        
+class dad(grandpa):        #we put grandpa class in inside of dad class so grandpa class will be access by the dad class
+    def money(self):
+        print("Dads money")
+
+    
+class son(dad):     #we put 'dad' class in inside of 'son' class so both 'dad' and 'grandpa' class will be access by the 'son' class
+    def laptop(self):
+        print("son's laptop")
+
+aravinth=son()      #son object
+aravinth.laptop()  
+aravinth.money()     
+
+jacob=dad()     #dad object
+jacob.phone()        #son's laptop
+                     Dads money
+                    grandpa's phone
+
+4. Hierarchical Inheritance
+          in this one parent class was access by many child classes
+
+#in this given program one dad() class was access by the 3 son classes
+class dad():
+    def money(self):
+        print("Dads money")
+
+class son1(dad):
+    pass
+class son2(dad):
+    pass
+class son3(dad):
+    pass
+
+son=son1()                 #dads money
+son.money()
+
+
+5.hybrid inheritance
+     #when above 4 types mixed that will called as hybrid inheritance
+
+          
+
+   
+
