@@ -1,0 +1,34 @@
+class a():
+    def __init__(self):
+        print("A")
+class b(a):
+    def __init__(self):
+        print("B")
+c=b()         # when you run this it's prints "B" 
+
+#but you want to print parent class you can use super like this 
+
+class a():
+    def __init__(self):
+        print("A")
+class b(a):
+    def __init__(self):
+        super().__init__()      #this helps to call parent class
+        print("B")
+c=b()
+
+
+
+#example
+class Person:
+    def show(self):
+        print("I am a Person")
+
+class Student(Person):
+    def show(self):
+        super().show()    # Call parent method
+        print("I am a Student")
+
+s = Student()                #I am a Person
+                              I am a Student
+s.show()
