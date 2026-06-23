@@ -1,0 +1,30 @@
+Interview Definition
+->Polymorphism is the ability of the same method, function, or operator to perform different actions depending on the object or data type
+
+Example 1: Same Method, Different Behavior
+class Dog:
+    def sound(self):
+        print("Bark")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+d = Dog()
+c = Cat()
+
+d.sound()   #Bark
+c.sound()   #Meow
+
+Example 2: method (function) overriding
+class animal():
+    def sound(self):
+        print("animal makes sound")
+class dog(animal):
+    def sound(self):
+        print("Dogs barkes")
+  
+a=dog()
+a.sound()   #Dogs barkes
+a.sound()
+
