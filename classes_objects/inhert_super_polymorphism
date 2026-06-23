@@ -1,0 +1,15 @@
+In this topic we see combine program of inhertion,super keyword and polymorphism
+
+class person():
+    def __init__(self,name):
+        self.name=name
+class student(person):
+    def __init__(self,name,grade):
+        super().__init__(name)
+        self.grade=grade
+    def display(self):
+        print("Grade:",self.grade)
+        print("Name:",self.name)
+
+a=student("Aravinth",'A')
+a.display()
