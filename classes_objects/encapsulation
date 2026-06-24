@@ -1,0 +1,45 @@
+In this topic we are going to learn about how encapsulation works with programs
+
+#EXAMPLE WITHOUT ENCAPSULATION
+
+class student():
+      def __init__(self):            #in this code we can access and modify the variable outside and inside of class
+             self.name="aravinth"    #in this we print(a.name) in outside of class
+a=student()
+print(a.name)    #aravinth
+
+#EXAMPLE WITH ENCAPSULATION
+->if you use two underscore '__' before the variable, you cannot change the variable value and access(modify) the variable by outside of class (example: self.__name="aravinth")
+->if you put using two underscore like this you will access the variable only inside of class you cannot access the variable outside of class
+->if you want to change the variable value that's also you can do only in inside of class 
+
+class student():
+    def __init__(self):
+        self.__name="aravinth"  #you cannot change the value and access(modify) the variable outside of class
+    def display(self):
+        print(self.__name)
+a=student()
+a.display()  #aravinth
+
+
+#ACCESS SPECIFIERS IN PYTHON
+1. Public
+->you can access this variables in everywhere(outside and inside of class both)
+#ex
+self.name = "Titus"
+
+2.Protected
+->This also same as public can access the variables in everywhere
+#ex
+self._name="Titus"
+
+3.Private
+->This variable you can access only in inside of class,you cannot access and modify the variable in outside of class
+#ex
+self.__name="Titus"
+
+
+
+
+
+
