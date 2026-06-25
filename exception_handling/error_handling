@@ -1,0 +1,42 @@
+Many exception are here in python but in this topic we will see  some common exceptions
+
+1)'TypeError' Exception
+     ->this occurs when invalid operations between data types
+     try:
+           a=input()
+           b=int(input())
+           print(a/b)   
+    except TypeError as e:          #output
+          print("type error:",e)        #type error: unsupported operand type(s) for /: 'str' and 'int' 
+                                    #Because 'a' is string and 'b' is int so,string cannot divide by int
+
+
+2)'NameError' Exception
+      -?this occurs when variable name is not define
+      try:
+            a=int(input())
+            b=int(input())
+            print(a/c)               #output
+      except NameError as e:           #name error: name 'c' is not defined
+           print("name error:",e)   #because c is not defined in this code
+
+
+3)'ValueError' Exception
+       ->this occurs when enter invalid data type conversion
+       try:
+           a=int(input())
+           b=int(input())
+           print(a+b)                    #output
+       except ValueError as e:             # value error: invalid literal for int() with base 10: 'as' 
+           print("value error:",e)     #because asked integer but enter string so occurs error
+
+
+            Common Exceptions
+Exception                    	Cause
+ZeroDivisionError-	         Dividing by zero
+ValueError	-                Invalid type conversion
+IndexError -                	Invalid list index
+KeyError-	                   Dictionary key not found
+TypeError-	                Invalid operation between data types
+FileNotFoundError-	         File does not exist
+       
