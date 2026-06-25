@@ -1,0 +1,34 @@
+#CODE WITHOUT EXCEPTION HANDLING
+
+a=10
+b=0        #shows error
+print(a/b)  #ZeroDivisionError: division by zero
+
+#CODE WITH EXCEPTION HANDLING
+try:
+     a=10
+     b=0
+     print(a/b)
+except Exception:                             #output:
+      print("Cannot divide by zero")              #Cannot divide by zero
+
+->the exception helps to the  program continues instead of crashing      
+
+#example
+
+try:
+   a=10
+   b=0
+   print(a/b)
+except Exception:
+   print("Cannot divide by zero")
+else:                                   #output:
+   print("Executed successfully")         #Cannot divide by zero 
+finally:                                   #done
+   print("done")
+
+
+try → Contains risky code.
+except → Handles the error.
+else → Executes if no error occurs.
+finally → Executes in all cases.
