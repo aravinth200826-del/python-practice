@@ -1,0 +1,49 @@
+
+1)READING A FILE         
+
+#program
+file=open("name.txt","r") 
+c=f.read()
+print(c)                 #  aravinth
+                            titus
+
+2)WRITING A FILE
+      ->when you use writing mode  the previous data of inside the files are removed or override
+      ->only the new writing mode  to creates data's are placed in inside of file.Old data's are removes or override in file
+#program
+file=open("name.txt","w")
+file.write("vijay\n")
+file.write("nithya\n")
+file.write("jacob\n")
+file.write("saroja\n")
+file.write("chinna thambi"
+file.close()                   #now these 5 names are filled in file(name.txt).the old 'aravinth' and 'titus' names are overrided
+
+file=open("name.txt","r")      #in file handling, we can print the file using read mode only
+print(file.read())
+
+#output
+vijay
+nithya
+jacob
+saroja
+chinna thambi
+
+3)APPENDING TO A FILE
+        ->when you use 'a' the append mode this add new data's to the old data's 
+    
+#program
+file=open("name.txt","a")
+file.write("Jesus")     #in inside of name file we previosly have 5 data's, now one more data is included to the file 
+file.close()
+
+file=open("name.txt","r")
+print(file.read())
+
+#output
+ vijay
+nithya
+jacob
+saroja
+chinna thambi
+Jesus
