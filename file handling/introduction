@@ -1,0 +1,23 @@
+#FILE HANDLING:
+        ->file handling is used to create,read,write and modify files.
+        ->we use the 'open()' function for file operations.
+   #syntax
+        variable_name=open("file_name","mode")
+   #example
+        file=open("name.txt","r")
+
+   ->First of all,want to create a file and fill the file with content whatever may be,then save this file in same folder where you save the programs running(enga program save pannuriyo andha same folder la)
+
+File Modes
+
+Mode	             Meaning
+"r"         -     Read file
+"w"	         -    Write file (creates new file or overwrites existing content)
+"a"	         -   Append data to the file
+"x"          -   	Create a new file
+"r+"         -   	Read and write
+
+ 
+     
+
+                            
