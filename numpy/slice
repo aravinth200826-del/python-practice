@@ -1,0 +1,41 @@
+->In this topic we will see about how slice methods with array
+
+#slice work with this method
+      #array[start:end:step]
+
+array=np.array([[1,2,3,4],
+                [5,6,7,8],                        #output
+                [9,10,12,13]])                    [[ 1  2  3  4]
+                                                   [ 9 10 12 13]]
+print(array[0:3:2])                  #start with 0th index and end with 3rd index,but every step move as 2.( 1) 0 index,2) 2 index)
+
+
+#if you want to print the 1 column element in each index you can use this
+
+array=np.array([[1,2,3,4],
+                [5,6,7,8],                        #output
+                [9,10,12,13]])                       [ 3  7 12]
+ print(array[:,2])                            #[:,] this contains all index,after the comma we describe the columns
+
+
+print(array[:,0:2]   #output   [[ 1  2]
+                               [ 5  6]
+                               [ 9 10]]
+
+
+#if you can access both index and their columns at same time
+   ->array[index,column]
+#we already see about 
+   ->index  #array[start:end:step]
+   ->column #array[start:end:step]
+         #array[index,column]
+   print(array[0:2,0:2])         #[[1,2]
+                                  [5,6]]
+
+                                  
+                                    
+                               
+
+
+                               
+ 
