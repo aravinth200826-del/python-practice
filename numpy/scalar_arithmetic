@@ -34,6 +34,18 @@ print(a/b)
 print(a**b)
 
 
+->comparisional operators
+
+import numpy as np
+a=np.array([12,45,78,23,68,79])
+print(a>50)           #[False False  True False  True  True]
+
+a[a>50]=0
+print(a)           #[12 45  0 23  0  0]
+
+
+
+
 
 
 
