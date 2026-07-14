@@ -1,0 +1,15 @@
+import numpy as np
+a=np.array([12,45,78,23,68,79])
+
+print(np.sum(a))  #305   #sum of all elements in array
+
+print(np.mean(a)) #50.833333333333336    #mean of array
+
+print(np.std(a)) #26.27683813213116   #standard deviation
+
+print(np.var(a)) #690.4722222222223  #variance of array
+print(np.max(a))  #79  #max of array
+print(np.min(a))  #12 #min of array
+print(np.prod(a))  #5204178720 #product of all elements in array
+print(np.argmin(a)) #0   #index of min element
+print(np.argmax(a)) #5 #index of max element
