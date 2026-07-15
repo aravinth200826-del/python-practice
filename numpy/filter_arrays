@@ -17,8 +17,15 @@ print(np.where(marks>60,"Pass","Fail")    #[['Fail' 'Pass' 'Pass' 'Fail' 'Pass' 
                                            ['Fail' 'Pass' 'Fail' 'Pass' 'Pass' 'Pass' 'Pass' 'Pass' 'Pass']]
 
 
+#to find evens
+marks=marks[marks%2==0]
+print(marks)    # [88 78 90 56 16 34 78 98 78 80 96]
+
 
 #AND ,OR operators
 
  #AND-'&'
  #OR-'|'
+
+
+
