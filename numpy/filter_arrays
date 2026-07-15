@@ -1,0 +1,24 @@
+#in this topic we are going to learn about how filtering works with array using numpy
+
+import numpy as np
+marks=np.array([[23,67,89,45,88,23,78,90,56]
+        ,[16,67,34,78,98,99,78,80,96]])
+fail=marks[marks<50]     #less than 50 marks will stores 
+print(fail)          #[23 45 23 16 34]
+
+passed=marks[marks>=50]
+print(passed)    #[67 89 88 78 90 56 67 78 98 99 78 80 96]
+
+pass_with_agrade=marks[(marks>50) & (marks>90)]  #you should use '&' instead of 'and' and put paranthesses for each condition
+print(pass_with_agrade)      #[98 99 96]
+
+#to print pass or fail
+print(np.where(marks>60,"Pass","Fail")    #[['Fail' 'Pass' 'Pass' 'Fail' 'Pass' 'Fail' 'Pass' 'Pass' 'Fail']
+                                           ['Fail' 'Pass' 'Fail' 'Pass' 'Pass' 'Pass' 'Pass' 'Pass' 'Pass']]
+
+
+
+#AND ,OR operators
+
+ #AND-'&'
+ #OR-'|'
