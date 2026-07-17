@@ -1,0 +1,63 @@
+#Random numbers in numpy
+
+rand=np.random.default_rng()
+print(rand.integers(2,24))  #it will print random numbers between 2 to 24
+
+print(rand.integers(low=2,high=53)) #this also print random numbers between 2 to 53
+
+print(rand.integers(low=1,high=56,size=3))  #it will prints 3 random numbers
+   #when you put size=(4,5) it will print matrix of random numbers
+
+#->when you use seed=1 in, inside of rand=np.random.default_rng(seed=1) it will print same random numbers again and again
+
+      #float
+
+print(np.random.uniform(low=2,high=3,size=3)  #[2.92619329 2.55562529 2.60932168]
+
+#if you use 
+      np.random.seed(seed=1)  #it will print same random numbers
+
+        #shuffle
+rand=np.random.default_rng()
+array=np.array([1,2,3,4,5])
+rand.shuffle(array)
+print(array)  #[3 2 4 5 1]  it shuffle the elements from array
+
+    #string
+rand=np.random.default_rng()
+fruits=np.array(["mango","orange","apple","banana","coconut"])
+print(rand.choice(fruits,size=2)      #it will print any 2 fruits from the array
+
+array=np.array(["🍇","🥥","🍎","🍌","🍋","🍉"])
+print(rand.choice(array,size=(3,4)))    
+        #[['🍎' '🥥' '🍌' '🥥']
+           ['🥥' '🍇' '🍌' '🥥']
+           ['🍋' '🍉' '🍋' '🍇']]
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+      #
