@@ -1,0 +1,95 @@
+import numpy as np
+
+# ---------------------------------------------
+# Question 1: Create a NumPy array
+# ---------------------------------------------
+q1 = np.array([10, 20, 30, 40, 50])
+print("Q1:", q1)
+
+# ---------------------------------------------
+# Question 2: Create an array from 1 to 20
+# ---------------------------------------------
+q2 = np.arange(1, 21)
+print("\nQ2:", q2)
+
+# ---------------------------------------------
+# Question 3: Create a 3x3 array of zeros
+# ---------------------------------------------
+q3 = np.zeros((3, 3))
+print("\nQ3:\n", q3)
+
+# ---------------------------------------------
+# Question 4: Create a 4x4 identity matrix
+# ---------------------------------------------
+q4 = np.identity(4)
+print("\nQ4:\n", q4)
+
+# ---------------------------------------------
+# Question 5: Find Sum, Mean, Maximum, Minimum
+# ---------------------------------------------
+q5 = np.array([12, 25, 8, 45, 31])
+
+print("\nQ5:")
+print("Array :", q5)
+print("Sum   :", np.sum(q5))
+print("Mean  :", np.mean(q5))
+print("Max   :", np.max(q5))
+print("Min   :", np.min(q5))
+
+# ---------------------------------------------
+# Question 6: Indexing and Slicing
+# ---------------------------------------------
+q6 = np.array([10, 20, 30, 40, 50, 60])
+
+print("\nQ6:")
+print("First 3 elements :", q6[:3])
+print("Last 2 elements  :", q6[-2:])
+print("Index 2 to 4     :", q6[2:5])
+
+# ---------------------------------------------
+# Question 7: Arithmetic Operations
+# ---------------------------------------------
+a = np.array([2, 4, 6, 8])
+b = np.array([1, 3, 5, 7])
+
+print("\nQ7:")
+print("Addition       :", a + b)
+print("Subtraction    :", a - b)
+print("Multiplication :", a * b)
+print("Division       :", a / b)
+
+# ---------------------------------------------
+# Question 8: Boolean Indexing
+# ---------------------------------------------
+q8 = np.array([12, 15, 20, 25, 30, 35])
+
+print("\nQ8:")
+print("Elements greater than 20 :", q8[q8 > 20])
+
+# ---------------------------------------------
+# Question 9: Reshape an Array
+# ---------------------------------------------
+q9 = np.arange(1, 13)
+
+print("\nQ9:")
+print(q9.reshape(3, 4))
+
+# ---------------------------------------------
+# Question 10: 3x3 Matrix Operations
+# ---------------------------------------------
+q10 = np.arange(1, 10).reshape(3, 3)
+
+print("\nQ10:")
+print("Matrix:\n", q10)
+print("First Row      :", q10[0])
+print("Second Column  :", q10[:, 1])
+print("Last Element   :", q10[2, 2])
+print("First Two Rows :\n", q10[:2])
+
+# ---------------------------------------------
+# Bonus Question: Print Even Numbers
+# ---------------------------------------------
+bonus = np.array([1, 2, 3, 4, 5])
+
+print("\nBonus:")
+print("Even Numbers :", bonus[bonus % 2 == 0])
