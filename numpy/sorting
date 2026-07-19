@@ -1,0 +1,33 @@
+import numpy as np
+a=np.array([1,2,3,5,6])
+print(np.sort(a))    #[1 2 3 5 6]
+
+b=[[1,8,2]
+   ,[0,3,5]]   #vertical sort(coloumn vice)
+print(np.sort((b),axis=0))  #[[0 3 2] 
+                             [1 8 5]]
+                             
+#horizontal(row vice)                              
+print(np.sort((b),axis=1))   #[[1 2 8]
+                             [0 3 5]]
+
+
+#to get output as index of sorting elements  using 'argsort'
+
+b=np.array([50,30,60,20,40])
+print(np.argsort(b))           #[3 1 4 0 2]
+                #20->3 index  , 30->1st index , 40->4th index  , 50->0th index  , 60->2nd index
+
+
+
+#example code using argsort
+prices = np.array([100, 50, 200, 20])
+names = np.array(["Apple", "Banana", "Cherry", "Dates"])
+
+sorted_indices = np.argsort(prices)
+print("Indices:", sorted_indices)     # Output: [3 1 0 2] (Because 20 is at index 3, 50 is at index 1, etc.
+
+print("Sorted Names:", names[sorted_indices])# Output: ['Dates' 'Banana' 'Apple' 'Cherry']
+                             
+
+                              
