@@ -1,0 +1,47 @@
+    #'concetenate' joining of two arrays
+
+import numpy as np
+a=np.array([1,2])
+b=np.array([3,4])
+print(np.concatenate((a,b)))   #[1 2 3 4]
+
+  #to joining in vertically(axis=0)
+c=np.array([[12,34],[45,78]])
+d=np.array([[23,45],[34,56]])
+print(np.concatenate((c,d),axis=0))   #[[12 34]
+                                       [45 78]
+                                       [23 45]
+                                        [34 56]]
+
+  #to join array in horizontal(axis=1)
+c=np.array([[12,34],[45,78]])
+d=np.array([[23,45],[34,56]])
+print(np.concatenate((c,d),axis=1))       #[[12 34 23 45]
+                                           [45 78 34 56]]
+
+#->we can use 'hstack','vstack' and 'dstack' functions instead of axis=1 and axis=0
+
+  #->'hstack'->horizontally
+  #->'vstack'->vertically
+
+
+  import numpy as np
+c=np.array([[12,34],[45,78]])
+d=np.array([[23,45],[34,56]])
+print(np.hstack((c,d)))         #it will print horizontally
+
+print(np.vstack((c,d)))       #it will print vertically  
+
+print(np.dstack((c,d)))    #[[[12 23]
+                             [34 45]]
+
+                               [[45 34]
+                               [78 56]]]  
+  
+  
+
+  
+
+
+  
+  
