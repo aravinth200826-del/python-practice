@@ -21,7 +21,7 @@ It tells us the number of dimensions.
 #program
 import numpy as np
 a = np.array([[1, 2, 3],[3,65,78]])    #2
-
+print(a.ndim)
 
                    3)size
 
@@ -44,4 +44,6 @@ a = np.array([1, 2, 3])
 
 print(a.dtype)     #int64
 
-print(a.ndim)
+      
+
+
