@@ -1,0 +1,57 @@
+# NumPy Searching Functions
+
+import numpy as np
+b = np.array([50, 30, 60, 20, 40])
+
+                   # 1. Find indexes of non-zero elements
+print("Non-zero indices:")
+print(np.nonzero(b))
+
+                   # 2. Use where() to replace values based on a condition
+print("\nUsing where():")
+print(np.where(b > 30, "Pass", "Fail"))
+
+                    # 3. Find indexes where the condition is True
+print("\nUsing argwhere():")
+print(np.argwhere(b > 30))
+
+                     # 4. searchsorted() requires a sorted array
+sorted_b = np.sort(b)
+
+print("\nSorted array:")
+print(sorted_b)
+
+print("\nPosition to insert 43:")
+print(np.searchsorted(sorted_b, 43))
+
+
+## Output
+
+```
+Non-zero indices:
+(array([0, 1, 2, 3, 4]),)
+
+Using where():
+['Pass' 'Fail' 'Pass' 'Fail' 'Pass']
+
+Using argwhere():
+[[0]
+ [2]
+ [4]]
+
+Sorted array:
+[20 30 40 50 60]
+
+Position to insert 43:
+3
+
+
+## Functions Used
+
+- `np.nonzero()` → Returns indexes of non-zero elements.
+- `np.where()` → Returns values based on a condition.
+- `np.argwhere()` → Returns indexes where the condition is True.
+- `np.searchsorted()` → Finds the insertion position in a sorted array.
+
+
+
