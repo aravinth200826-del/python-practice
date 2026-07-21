@@ -1,0 +1,85 @@
+#Numpy array Iteration
+
+import numpy as np
+print(np.identity(4))      #'np.identity(n)' n of imaginary matrix 
+       #output 
+              [[1. 0. 0. 0.]
+              [0. 1. 0. 0.]
+              [0. 0. 1. 0.]
+              [0. 0. 0. 1.]]
+
+#1.Iterate through a 1D Array
+
+import numpy as np
+a = np.array([10, 20, 30, 40])
+for i in a:
+    print(i)
+        #output 
+           10
+           20
+           30
+           40
+
+
+#2.Iterage through a 2D array
+
+import numpy as np
+a = np.array([[1, 2],
+              [3, 4]])
+for i in a:               #output
+    print(i)                  [1 2]
+                              [3 4]
+
+#3.Iterate Through Every Element
+
+import numpy as np
+a = np.array([[1, 2],
+              [3, 4]])
+for row in a:
+    for value in row:
+        print(value)    
+ #output
+1
+2
+3
+4
+
+
+
+#4.'np.nditer()' 
+  #->automatically visits every element in a matrix
+
+import numpy as np
+a= np.array([[1, 2],
+              [3, 4]])
+for i in np.nditer(a):
+       print(i)
+
+#output
+1
+2
+3
+4
+
+
+#5.'np.ndenumerate()'
+   #->returns both index and value
+
+import numpy as np
+a = np.array([[10, 20],
+              [30, 40]])
+for index,value in np.ndenumerate(a):
+   print(index)
+   print(value)
+
+#output
+(0, 0) 10
+(0, 1) 20
+(1, 0) 30
+(1, 1) 40
+
+
+
+
+
+
