@@ -1,0 +1,29 @@
+#In this video we are going to see about how copy() and view() works in Numpy
+
+            #1.copy()
+
+import numpy as np
+a=np.array([1,2,3,4,5])
+b=a.copy()      #'copy' function only copy what data places inside of main(a) array at copying time
+a[0]=100        #when you change the value of a,it will not stores in b
+
+print(a)    #output:  [100   2   3   4   5]
+print(b)    #ouput:   [1 2 3 4 5]
+
+
+         #2.view()
+
+import numpy as np
+a=np.array([1,2,3,4,5])
+b=a.view()       #when you use view() it will access both arrays
+a[0]=100           #it will change the value of 0th index in b array also
+
+print(a)          #[100   2   3   4   5]
+print(b)          #[100   2   3   4   5]
+
+b[1]=100
+print(a)        #[  1 100   3   4   5]
+print(b)        #[  1 100   3   4   5]
+
+
+
