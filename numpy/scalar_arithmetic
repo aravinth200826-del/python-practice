@@ -30,8 +30,8 @@ b=np.array([2,3,6])
 print(a+b)   #[ 3  6 10] addition of elements
 print(a-b)     #[-1  0 -2]  substraction of each elements
 print(a*b)     #[ 2  9 24] multiplication of each elements 
-print(a/b)     
-print(a**b)
+print(a/b)     #[0.5        1.         0.66666667]    
+print(a**b)   #[   1   27 4096]   #a power of b
 
 
 ->comparisional operators
