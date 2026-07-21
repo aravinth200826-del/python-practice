@@ -13,3 +13,12 @@ print(np.min(a))  #12 #min of array
 print(np.prod(a))  #5204178720 #product of all elements in array
 print(np.argmin(a)) #0   #index of min element
 print(np.argmax(a)) #5 #index of max element
+
+b=np.array([[23,45]
+          ,[76,25]])
+print(np.median(b,axis=0))   #[49.5 35. ]   #median value for column vice
+       #->we can use other function like sum,mean,min and other function also using axis=0 and 1 vice
+
+print(np.cumsum(b)) [ 23  68 144 169] #cummulatice frequency of the array
+
+
