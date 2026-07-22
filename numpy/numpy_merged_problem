@@ -1,0 +1,86 @@
+  #question
+Final NumPy Challenge: Student Report Analyzer
+import numpy as np
+
+marks = np.array([45, 78, 92, 35, 88, 60, 49, 100, 73, 55])
+attendance = np.array([90, 85, 95, 60, 88, 70, 65, 98, 75, 80])
+Print the following:
+Part 1: Student Performance
+Total students
+Passed students (marks ≥ 50)
+Failed students
+Distinction students (marks ≥ 75)
+Students scoring between 60 and 90 (inclusive)
+Part 2: Statistics
+Highest mark
+Lowest mark
+Average mark
+Sum of all marks
+Index of highest mark
+Part 3: Attendance
+Students with attendance ≥ 75%
+Average attendance
+Highest attendance
+Lowest attendance
+Part 4: Combined Conditions ⭐⭐⭐
+
+Print the marks of students who:
+
+Scored at least 60 marks
+AND have attendance at least 80%
+
+(This is one of the most useful NumPy filtering techniques.)
+
+Part 5: Bonus ⭐⭐⭐⭐
+
+Without using loops:
+
+Print:
+
+Number of students with marks above the average mark
+Number of students with attendance above the average attendance
+
+
+
+
+#code
+
+import numpy as np
+
+marks = np.array([45, 78, 92, 35, 88, 60, 49, 100, 73, 55])
+attendance = np.array([90, 85, 95, 60, 88, 70, 65, 98, 75, 80])
+print("Part 1:\n")
+print("total students:",len(marks))
+print("passed students:",marks[marks>=50])
+print("failed students:",marks[marks<50])
+print("Distinct students:",marks[marks>=75])
+print("between 60 to 90",marks[(marks>=60) & (marks<=90)])
+
+print("Part 2:\n")
+
+print("highest mark:",np.max(marks))
+print("lowest mark:",np.min(marks))
+print("average mark:",np.mean(marks))
+print("sum of all mark:",np.sum(marks))
+print("index of highest rank:",np.argmax(marks))
+
+
+print("Part 3:\n")
+
+print("students with 75 percentage:",attendance[attendance>=75])
+print("Average attendance:",np.mean(attendance))
+print("highest attendance",np.max(attendance))
+print("lowest attendance",np.min(attendance))
+
+print("part 4:\n")
+
+print(marks[(marks>=60) & (attendance>=80)])
+
+print("part 5:\n")
+print(len(marks[marks>np.mean(marks)]))
+print(len(attendance[attendance>np.mean(attendance)]))
+
+
+
+
+
